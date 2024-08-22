@@ -19,7 +19,7 @@ function generateCharacter(){
 
     const race = races[Math.floor(Math.random() * races.length)];
     const charClass = classes[Math.floor(Math.random() * classes.length)];
-    const abilityScores = abilities.map(ability => `${ability}: ${Math.Floor(Math.random() * 16) + 3}`);
+    const abilityScores = abilities.map(ability => `${ability}: ${Math.floor(Math.random() * 16) + 3}`);
 
 
     //DOM for the character
