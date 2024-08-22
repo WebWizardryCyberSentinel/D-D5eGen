@@ -11,17 +11,18 @@
 // Add an event listener that listens for the click event and uses function generateCharacter.
 document.getElementById('generateButton').addEventListener('click', generateCharacter);
 
+// functions to generate the character
 function generateCharacter(){
     const races = ['Human', 'Elf', 'Dwarf', 'Halfling', 'Dragonborn'];
     const classes = ['Fighter', 'Wizard', 'Sorcerer', 'Barbarian', 'Druid', 'Rogue']
     const abilities = ['Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Wisdom', 'Charisma'];
 
     const race = races[Math.floor(Math.random() * races.length)];
-    const charClass = classes[Math.floow(Math.random() * classes.length)];
-    const abilityScores = abilities.map(ability => `${ability}: ${Math.Floow(Math.random() * 16) + 3}`);
+    const charClass = classes[Math.floor(Math.random() * classes.length)];
+    const abilityScores = abilities.map(ability => `${ability}: ${Math.Floor(Math.random() * 16) + 3}`);
 
 
-
+    //DOM for the character
     const character = `
         <h2>${race} ${charClass}<h2>
         <ul>
@@ -29,6 +30,6 @@ function generateCharacter(){
         </ul>
     `;
 
-
+    // inject character in DOM
     document.getElementById('character').innerHTML = character;
 }
