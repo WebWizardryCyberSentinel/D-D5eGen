@@ -48,13 +48,15 @@ body .grid_wrapper.reading_pane{
     width: 100vw;
     padding: 1rem;*/
 }
-body .grid_wrapper .generator {
+body .grid_wrapper.generator {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    list-style-type:none;
+    list-style-type:    none;
 }
+
+
 
 body .grid_wrapper.footer{
     position: fixed;
